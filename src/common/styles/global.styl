@@ -1,0 +1,26 @@
+// Global Nib Reset
+// https://github.com/tj/nib/blob/master/lib/nib/reset.styl
+global-reset()
+
+/* Apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1;
+  font-weight: 300;
+  font-family: Tahoma, sans-serif;
+  height: 100%;
+  width: 100vw;
+}
+
+body {
+  font-size: 1rem;
+}
