@@ -1,5 +1,5 @@
 {
-  "name": "schoolobjects",
+  "name": "demo-app",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -12,13 +12,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eduphoria/SchoolObjects.NET.git"
+    "url": "git+https://github.com/jkyle/demo-app.git"
   },
   "author": "",
   "bugs": {
-    "url": "https://github.com/eduphoria/SchoolObjects.NET/issues"
+    "url": "https://github.com/jkyle/demo-app/issues"
   },
-  "homepage": "https://github.com/eduphoria/SchoolObjects.NET#readme",
+  "homepage": "https://github.com/jkyle/demo-app",
   "devDependencies": {
     "babel-core": "^6.4.0",
     "babel-loader": "^6.2.1",
