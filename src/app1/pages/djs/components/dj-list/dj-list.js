@@ -12,7 +12,7 @@ function DJItem({ dj, selected, genres, onClick }){
           <div className={genreItem} key={genre.id}>{ genre.title }</div  >
         ) }
       </div>
-      <div className={availability}>{ dj.available ? 'Available' : 'Unavailable' }</div>
+      <div className={availability}>{ dj.available }</div>
     </li>
   );
 }

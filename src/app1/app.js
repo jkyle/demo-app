@@ -2,6 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import DJPage from './pages/djs/djs';
+import { AppHeader } from '@common/components';
+
+import { selectDj, updateSelectedDJ, updateDj } from './action-creators';
 
 function mapStateToProps(state){
   return {
@@ -13,14 +16,17 @@ function mapStateToProps(state){
 
 function mapDispatchToProps(dispatch){
   return {
-    selectDj: (dj) => dispatch({ type: 'SELECT_DJ', dj }),
-    updateDj: (field, value) => dispatch({ type: 'UPDATE_SELECTED_DJ', field, value }),
-    saveDj: (id, dj) => dispatch({ type: 'UPDATE_DJ', id, dj })
+    selectDj: dj => dispatch(selectDj(dj)),
+    updateDj: (field, value) => dispatch(updateSelectedDJ(field, value)),
+    saveDj: (id, dj) => dispatch(updateDj(id, dj))
   };
 }
 
 const App = (props) => (
-  <DJPage { ...props }></DJPage>
+  <section>
+    <AppHeader appName="DJ Cool People"></AppHeader>
+    <DJPage { ...props }></DJPage>
+  </section>
 );
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

@@ -3,19 +3,19 @@ const initialState = [
     id: 1,
     name: 'Scott',
     genres: [1],
-    available: true
+    available: 'Yes'
   },
   {
     id: 2,
     name: 'John',
     genres: [2,3],
-    available: false
+    available: 'No'
   },
   {
     id: 3,
     name: 'Moby',
     genres: [1,3],
-    available: true
+    available: 'Maybe'
   }
 ];
 
