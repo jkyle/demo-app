@@ -19,7 +19,7 @@ module.exports = {
       },
       {
         test: /\.styl$/,
-        loader: 'style-loader!css-loader?sourceMap&modules&importLoaders=1!stylus-loader?paths=' + basePath + '/common/'
+        loader: 'style-loader!css-loader?sourceMap&modules&importLoaders=1!stylus-loader?paths=' + basePath + '/common/styles'
       }, {
         test: /\.html$/,
         loader: 'html'

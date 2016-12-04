@@ -1,5 +1,5 @@
 import React from 'react';
-import { container } from './edit-dj.styl';
+import { container, button } from './edit-dj.styl';
 import { InputRow, Radio, Checkbox } from '@common/components';
 import isEqual from 'lodash/isEqual';
 
@@ -37,7 +37,7 @@ const EditDJ = ({ dj, originalDj, updateDj, saveDj, genres }) => {
         )}
       </InputRow>
       <InputRow>
-        <button disabled={clean} onClick={() => saveDj(dj.id, dj)}>Save</button>
+        <button className={button} disabled={clean} onClick={() => saveDj(dj.id, dj)}>Save</button>
       </InputRow>
     </section>
   );
